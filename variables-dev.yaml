@@ -1,0 +1,10 @@
+MONGODB_HOST: mongodb-dev.prajai.online  # submit your host
+REDIS_HOST: redis-dev.prajai.online 
+MYSQL_HOST: mysql-dev.prajai.online 
+RABBITMQ_HOST: rabbitmq-dev.prajai.online 
+CATALOGUE_HOST: catalogue-dev.prajai.online 
+USER_HOST: user-dev.prajai.online 
+CART_HOST: cart-dev.prajai.online 
+SHIPPING_HOST: shipping-dev.prajai.online 
+PAYMENT_HOST: payment-dev.prajai.online 
+DISPATCH_HOST: dispatch-dev.prajai.online 
