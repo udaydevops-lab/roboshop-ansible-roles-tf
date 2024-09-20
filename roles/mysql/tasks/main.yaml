@@ -17,5 +17,6 @@
     state: started
     enabled: yes
 
+# the root password will be fetched from the aws ssm parameter using boto boto3 decrypt the password
 - name: setup root password
-  ansible.builtin.command: mysql_secure_installation --set-root-pass RoboShop@1
+  ansible.builtin.command: mysql_secure_installation --set-root-pass {{lookup ('aws_ssm', '/roboshop/{{evn}}/mysql_root_pass', region='us-east-1', decrypt=True) }}
